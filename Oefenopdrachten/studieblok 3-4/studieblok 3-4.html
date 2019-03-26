@@ -1,4 +1,31 @@
-<html onmousemove="mousemove(event)">
+<html style="position: relative;" onmousemove="mousemove(event)">
+
+  <style>
+
+    #linebreak1 {
+      display: block;
+    }
+
+    #info {
+      display: none;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    #mijn_naam {
+      display: inline-block;
+    }
+
+    #click:hover {
+      background-color: #d7d7d7;
+      border: solid black 1px;
+      cursor: pointer;
+    }
+
+  </style>
+
 
   <body>
 
@@ -26,8 +53,9 @@
     <br>
     <br>
 
-    <div style="width: 90px;" id="italic_english" onclick="english()" onmouseover="italic(italic_english)" onmouseout="normal(italic_english)">Hello world!</div>
+    <div id="italic_english" onclick="english()" onmouseover="italic(italic_english)" onmouseout="normal(italic_english)">Hello world!</div>
 
+    <br>
     <br>
 
     <strong>opdracht 4</strong>
@@ -35,11 +63,11 @@
     <br>
     <br>
 
-    <div style="width: 200px;" onmousedown="vet(this)">deze tekst wordt vetgedrukt</div>
-    <div style="width: 200px;" onmousedown="vet(this)">deze tekst wordt vetgedrukt</div>
-    <div style="width: 200px;" onmousedown="vet(this)">deze tekst wordt vetgedrukt</div>
-    <div style="width: 200px;" onmousedown="vet(this)">deze tekst wordt vetgedrukt</div>
-    <div style="width: 200px;" onmousedown="vet(this)">deze tekst wordt vetgedrukt</div>
+    <div onmousedown="vet(this)">deze tekst wordt vetgedrukt</div><br>
+    <div onmousedown="vet(this)">deze tekst wordt vetgedrukt</div><br>
+    <div onmousedown="vet(this)">deze tekst wordt vetgedrukt</div><br>
+    <div onmousedown="vet(this)">deze tekst wordt vetgedrukt</div><br>
+    <div onmousedown="vet(this)">deze tekst wordt vetgedrukt</div><br>
 
     <br>
 
@@ -50,6 +78,7 @@
 
     <div id="xy-pos"></div>
 
+    <br>
     <br>
 
     <strong>opdracht 6</strong>
@@ -67,14 +96,29 @@
     <br>
     <br>
 
-    <p style="display: inline-block;">Jordan Groothuizen</p> &nbsp <button type="button" id="button" style="width: 60px;" onclick="verbergen()">hide</button>
+    <p id="mijn_naam">Jordan Groothuizen</p> <button type="button" id="button" style="width: 60px; position: relative;" onclick="verbergen()">show</button>
 
     <div id="info">
 
     <p>18 november 2001</p>
     <p>Marsdijk Beunheugte 77</p>
 
+    <br>
+
     </div>
+
+    <div id="linebreak1"><br></div>
+
+    <strong>opdracht 8</strong>
+
+    <br>
+    <br>
+
+    <div id="click" onclick="addname()">click me</div>
+
+    <br>
+
+    <p id="change_name"></p>
 
   </body>
 
@@ -87,3 +131,4 @@
 <script src="opdracht5.js"></script>
 <script src="opdracht6.js"></script>
 <script src="opdracht7.js"></script>
+<script src="opdracht8.js"></script>
