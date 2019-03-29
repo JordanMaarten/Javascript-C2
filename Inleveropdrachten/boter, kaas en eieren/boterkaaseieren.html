@@ -1,21 +1,37 @@
-<body>
+<html>
 
-<style>
+  <head>
 
-div {
-  background-color: black;
-}
+    <link rel="stylesheet" href="css.css">
 
-</style>
+  </head>
 
-<div id="blok1">
-<div id="blok2">
-<div id="blok3">
-<div id="blok4">
-<div id="blok5">
-<div id="blok6">
-<div id="blok7">
-<div id="blok8">
-<div id="blok9">
+  <body>
 
-</body>
+    <h1>Boter, kaas en eieren</h1>
+
+    <table>
+      <tr>
+        <th><div class="empty" id="blok1" onclick="kruis(this)" style="background-color: white;"></div></th>
+        <th><div class="empty" id="blok2" onclick="kruis(this)" style="background-color: white;"></div></th>
+        <th><div class="empty" id="blok3" onclick="kruis(this)" style="background-color: white;"></div></th>
+      </tr>
+      <tr>
+        <th><div class="empty" id="blok4" onclick="kruis(this)" style="background-color: white;"></div></th>
+        <th><div class="empty" id="blok5" onclick="kruis(this)" style="background-color: white;"></div></th>
+        <th><div class="empty" id="blok6" onclick="kruis(this)" style="background-color: white;"></div></th>
+      </tr>
+      <tr>
+        <th><div class="empty" id="blok7" onclick="kruis(this)" style="background-color: white;"></div></th>
+        <th><div class="empty" id="blok8" onclick="kruis(this)" style="background-color: white;"></div></th>
+        <th><div class="empty" id="blok9" onclick="kruis(this)" style="background-color: white;"></div></th>
+      </tr>
+    </table>
+
+    <button type="button" onclick="document.location.reload(true)">Reset</button>
+
+    <script src="js.js"></script>
+
+  </body>
+
+</html>
