@@ -1,0 +1,22 @@
+html {
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  font-family: monospace;
+  font: arial;
+}
+
+body div {
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-color: white;
+  padding: 50px;
+}
+
+table {
+  position: absolute;
+  top: 125px;
+  left: 650px;
+  background-color: #575757;
+  border: solid #575757 20px;
+}
